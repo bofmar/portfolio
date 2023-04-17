@@ -3,9 +3,13 @@
   --bg-main: #121212;
   --white-text: #eee;
   --green: rgba(63, 195, 128, 1);
+  --off-green: rgba(60, 185, 118, 1);
 
   /*Fonts and font sizes */
+  --small-text-size: 12px;
   --normal-text-size: 18px;
+  --biger-text-size: 26px;
+  --bigest-text-size: 32px;
 }
 
 /* * * * *
@@ -13,6 +17,7 @@
 * * * * */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   background-color: var(--bg-main);
@@ -24,6 +29,9 @@ a {
   font-weight: bold;
 }
 
+button {
+  all: initial;
+}
 /* * * * *
   Nav Bar
 * * * * */
@@ -70,6 +78,118 @@ header a:focus:after {
   transform: scaleX(1);
 }
 
+/* * * * *
+Introduction
+* * * * */
+
 .introduction-section {
-    background: linear-gradient(45deg, rgba(48,48,50,1) 0%, rgba(28,28,32,1) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(45deg, rgba(48,48,50,1) 0%, rgba(28,28,32,1) 50%, rgba(0,0,0,1) 100%);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.typewritter > p {
+  overflow: hidden;
+  width: fit-content;
+  font-size: var(--biger-text-size);
+  font-family: 'Source Code Pro';
+  border-right: .15em solid var(--white-text); 
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  color: var(--green);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 16ch }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.introduction-left  h1 {
+  font-size: var(--bigest-text-size);
+  font-family: Karla;
+  opacity: 0;
+  animation: fade-in-left 1s ease-in 4s forwards;
+}
+
+.introduction-left h1 > span {
+  color: var(--green);
+}
+
+.introduction-left h2 {
+  font-size: var(--biger-text-size);
+  font-family: Karla;
+  opacity: 0;
+  animation: fade-in-left 1s ease-in 4s forwards;
+}
+
+.introduction-left button {
+  opacity: 0;
+  animation: fade-in-left 1s ease-in 4s forwards;
+  color: var(--bg-main);
+  background-color: var(--green);
+  font-size: var(--normal-text-size);
+  font-family: Roboto;
+  padding: 5px 6px;
+  border-radius: 10px;
+}
+
+.introduction-left button:hover,
+.introduction-left button:focus {
+  background-color: var(--off-green);
+  color: var(--white-text);
+}
+
+@keyframes fade-in-left {
+  from {
+   transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+.introduction-right {
+  position: relative;
+}
+
+.introduction-image {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: fade-in-right 1s ease-in 4s forwards;
+}
+
+.introduction-image-decorator {
+  width: 250px;
+  height: 250px;
+  background-color: var(--green);
+  border-radius: 54% 46% 50% 50% / 20% 26% 80% 80% ;
+  position: absolute;
+  top: 55%;
+  left: -15%;
+  opacity: 0;
+  animation: fade-in-right 1s ease-in 4s forwards;
+}
+
+@keyframes fade-in-right {
+  from {
+   transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+  transform: translateX(0);
+  opacity: 1;
+  }
 }
