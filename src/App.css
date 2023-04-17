@@ -38,10 +38,13 @@ button {
 
 header {
   height: 5vh;
+  width: 100vw;
   background-color: var(--green);
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
+  z-index: 20;
 }
 
 header > ul {
