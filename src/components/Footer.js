@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id='contact'>
       <p>This is the footer</p>
     </footer>
   );
