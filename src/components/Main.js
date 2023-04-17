@@ -1,9 +1,10 @@
 import React from "react";
+import Introduction from './Introduction';
 
 export default function Main() {
   return (
     <main>
-      <p> Main content</p>
+      <Introduction />
     </main>
   );
 }
