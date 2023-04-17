@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <section className='introduction-wrapper'>
+    <section className='introduction-section'>
       <div className='introduction-left'>
         <div className='typewritter'>
           <p>{'>'}hello_there.md</p>
