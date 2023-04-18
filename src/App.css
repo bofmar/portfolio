@@ -27,10 +27,12 @@ body {
 a {
   all: initial;
   font-weight: bold;
+  cursor: pointer;
 }
 
 button {
   all: initial;
+  cursor: pointer;
 }
 /* * * * *
   Nav Bar
