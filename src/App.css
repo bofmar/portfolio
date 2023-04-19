@@ -203,20 +203,24 @@ Introduction
   About
 * * * * */
 
-.about-section {
+.about-section,
+.projects-section{
   font-size: var(--normal-text-size);
   font-family: Karla;
   padding-top: 45px;
 }
 
-.about-section > h3 {
+.about-section > h3,
+.projects-section > h3{
   font-size: var(--bigest-text-size);
   text-align: center;
   position: relative;
 }
 
 .about-section > h3::before,
-.about-section > h3::after {
+.about-section > h3::after,
+.projects-section > h3::before,
+.projects-section > h3::after{
   content: '';
   height: 3px;
   width: 46%;
@@ -225,12 +229,14 @@ Introduction
   border-radius: 5px;
 }
 
-.about-section > h3::before {
+.about-section > h3::before,
+.projects-section > h3::before{
   top: 50%;
   left: 0;
 }
 
-.about-section > h3::after{
+.about-section > h3::after,
+.projects-section > h3::after{
   top: 50%;
   left: 54%;
 }
@@ -277,4 +283,94 @@ Introduction
 .skill-icon {
   min-width: 50px;
   max-width: 5%;
+}
+
+/* * * * *
+  Projects
+* * * * */
+
+.projects-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.project-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr fit-content;
+  align-items: center;
+  gap: 2rem;
+  perspective: 800px;
+}
+
+.project-card-wrapper:nth-child(2n + 1) {
+  grid-template-areas: 
+    "title pic"
+    "stack pic"
+    "desc pic"
+    "links pic";
+}
+
+.project-card-wrapper:nth-child(2n) {
+  grid-template-areas: 
+    "pic title "
+    "pic stack "
+    "pic desc "
+    "pic links ";
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: var(--biger-text-size);
+  color: var(--green);
+}
+
+.stack-section {
+  display: flex;
+  gap: 30px;
+}
+
+.stack-badge {
+  background-color: var(--green);
+  color: var(--bg-main);
+  font-family: Roboto;
+  padding: 5px 12px;
+  border-radius: 20%/50%;
+}
+
+.project-image {
+  width: 100%;  
+  grid-area: pic;
+  box-shadow: 2px 10px 30px hsla(0, 0%, 0%, 0.25);
+}
+
+.project-card-wrapper:nth-child(2n + 1) .project-image {
+  transform: rotateY(-10deg);
+}
+
+.project-card-wrapper:nth-child(2n) .project-image {
+  transform: rotateY(10deg);
+}
+
+.project-links {
+  display: flex;
+  gap: 25px;
+}
+
+.project-link {
+  color: var(--green);
+  font-family: Roboto;
+  font-size: var(--normal-text-size);
+  padding: 5px 12px;
+  border: 3px solid var(--green);
+  border-radius: 20%/50%;
+  transition: transform 250ms ease-out;
+}
+
+.project-link:hover,
+.project-link:focus {
+  transform: scale(1.1);
 }

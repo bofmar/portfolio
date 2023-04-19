@@ -10,8 +10,10 @@ export default function ProjectCard({ project }) {
       </section>
       <p className='project-description'>{project.desc}</p>
       <img src={project.imgPath} alt='' className='project-image' />
-      <a href={project.liveLink} target='_blank' className='project-link'>Live app</a>
-      <a href={project.codeLink} target='_blank' className='project-link'>Code</a>
+      <section className='project-links'>
+        <a href={project.liveLink} target='_blank' className='project-link'>Live app</a>
+        <a href={project.codeLink} target='_blank' className='project-link'>Code</a>
+      </section>
     </div>
   );
 }
