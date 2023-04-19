@@ -104,7 +104,7 @@ Introduction
   white-space: nowrap;
   letter-spacing: .15em;
   animation: 
-    typing 3.5s steps(40, end),
+    typing 1.5s steps(40, end),
     blink-caret .75s step-end infinite;
   color: var(--green);
 }
@@ -123,7 +123,7 @@ Introduction
   font-size: var(--bigest-text-size);
   font-family: Karla;
   opacity: 0;
-  animation: fade-in-left 1s ease-in 4s forwards;
+  animation: fade-in-left 1s ease-in 2s forwards;
 }
 
 .introduction-left h1 > span {
@@ -134,12 +134,12 @@ Introduction
   font-size: var(--biger-text-size);
   font-family: Karla;
   opacity: 0;
-  animation: fade-in-left 1s ease-in 4s forwards;
+  animation: fade-in-left 1s ease-in 2s forwards;
 }
 
 .introduction-left button {
   opacity: 0;
-  animation: fade-in-left 1s ease-in 4s forwards;
+  animation: fade-in-left 1s ease-in 2s forwards;
   color: var(--bg-main);
   background-color: var(--green);
   font-size: var(--normal-text-size);
@@ -173,7 +173,7 @@ Introduction
   position: relative;
   z-index: 2;
   opacity: 0;
-  animation: fade-in-right 1s ease-in 4s forwards;
+  animation: fade-in-right 1s ease-in 2s forwards;
 }
 
 .introduction-image-decorator {
@@ -185,7 +185,7 @@ Introduction
   top: 55%;
   left: -15%;
   opacity: 0;
-  animation: fade-in-right 1s ease-in 4s forwards;
+  animation: fade-in-right 1s ease-in 2s forwards;
 }
 
 @keyframes fade-in-right {
