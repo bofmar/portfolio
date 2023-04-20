@@ -32,7 +32,7 @@ export default function ContactForm() {
           <textarea placeholder="Your message" id='message' name="message" value={data.message} required onChange={e => setData({ ...data, message: e.target.value })} />
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" className='submit-button'>Submit</button>
         </div>
       </form>
       {submited ? <SuccessMessage firstName={data.firstName} /> : null}

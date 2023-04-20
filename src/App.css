@@ -417,6 +417,22 @@ footer{
   color: var(--green);
 }
 
+.submit-button {
+  color: var(--bg-main);
+  background-color: var(--green);
+  font-family: Roboto;
+  font-size: var(--normal-text-size);
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 20%/50%;
+  transition: transform 250ms ease-out;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  transform: scale(1.1);
+}
+
 .socials-area {
   align-self: flex-start;
   display: flex;
