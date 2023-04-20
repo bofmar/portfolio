@@ -210,41 +210,37 @@ Introduction
 * * * * */
 
 .about-section,
-.projects-section{
+.projects-section,
+footer{
   font-size: var(--normal-text-size);
   font-family: Karla;
   padding-top: 45px;
 }
 
-.about-section > h3,
-.projects-section > h3{
+.section-title{
   font-size: var(--bigest-text-size);
   text-align: center;
   position: relative;
 }
 
-.about-section > h3::before,
-.about-section > h3::after,
-.projects-section > h3::before,
-.projects-section > h3::after{
+.section-title::before,
+.section-title::after {
   content: '';
   height: 3px;
-  width: 46%;
+  width: calc(50% - 100px);
   background-color: var(--green);
   position: absolute;
   border-radius: 5px;
 }
 
-.about-section > h3::before,
-.projects-section > h3::before{
+.section-title::before {
   top: 50%;
   left: 0;
 }
 
-.about-section > h3::after,
-.projects-section > h3::after{
+.section-title::after {
   top: 50%;
-  left: 54%;
+  left: 55%;
 }
 
 .about-wrapper {
