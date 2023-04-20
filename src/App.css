@@ -74,7 +74,6 @@ header a::after {
   height: 2px;
   transform: scaleX(0);
   transform-origin: left;
-
   transition: transform 250ms ease-in;
 }
 
@@ -431,6 +430,7 @@ footer{
 .submit-button:hover,
 .submit-button:focus {
   transform: scale(1.1);
+  color: var(--white-text);
 }
 
 .socials-area {
