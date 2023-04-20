@@ -226,11 +226,13 @@ footer{
 .section-title::before,
 .section-title::after {
   content: '';
+  display: block;
   height: 3px;
   width: calc(50% - 100px);
   background-color: var(--green);
   position: absolute;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .section-title::before {
@@ -240,7 +242,7 @@ footer{
 
 .section-title::after {
   top: 50%;
-  left: 55%;
+  right: 0;
 }
 
 .about-wrapper {
