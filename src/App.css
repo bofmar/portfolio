@@ -397,6 +397,17 @@ footer{
   Footer
 * * * * */
 
+.footer-wrapper {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.footer-wrapper > * {
+  width: 60%;
+}
+
 .social-media img {
   width: 50px;
   transition: transform 150ms ease-in;
