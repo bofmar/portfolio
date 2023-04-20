@@ -1,9 +1,10 @@
 import React from "react";
+import ContactForm from './ContactForm';
 
 export default function Footer() {
   return (
     <footer id='contact'>
-      <p>This is the footer</p>
+      <ContactForm />
     </footer>
   );
 }
