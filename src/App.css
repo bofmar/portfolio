@@ -408,6 +408,15 @@ footer{
   width: 60%;
 }
 
+.contact-area {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-area span {
+  color: var(--green);
+}
+
 .social-media img {
   width: 50px;
   transition: transform 150ms ease-in;

@@ -8,7 +8,7 @@ export default function Footer() {
       <h3 className='section-title'>Contact Me</h3>
       <div className='footer-wrapper'>
         <div className='contact-area'>
-          <h4>Would you like to get in touch? Please fill out the following form to send me a message and I'll get back to you the soonest possible.</h4>
+          <h4>Would you like to <span>get in touch?</span> Please fill out the following form to send me a message and I'll get back to you the soonest possible.</h4>
           <ContactForm />
         </div>
         <div className='socials-area'>
