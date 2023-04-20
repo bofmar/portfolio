@@ -392,3 +392,21 @@ footer{
 .project-link:focus {
   transform: scale(1.1);
 }
+
+ /* * * * *
+  Footer
+* * * * */
+
+.social-media img {
+  width: 50px;
+  transition: transform 150ms ease-in;
+}
+
+.social-media > a:hover > img,
+.social-media > a:focus > img{
+  transform: scale(1.2);
+}
+
+.github-icon {
+  filter: invert(99%) sepia(1%) saturate(103%) hue-rotate(132deg) brightness(116%) contrast(87%);
+}
