@@ -123,7 +123,6 @@ Introduction
   font-size: var(--bigest-text-size);
   font-family: Karla;
   opacity: 0;
-  animation: fade-in-left 1s ease-in 2s forwards;
 }
 
 .introduction-left h1 > span {
@@ -134,18 +133,22 @@ Introduction
   font-size: var(--biger-text-size);
   font-family: Karla;
   opacity: 0;
-  animation: fade-in-left 1s ease-in 2s forwards;
 }
 
 .introduction-left button {
   opacity: 0;
-  animation: fade-in-left 1s ease-in 2s forwards;
   color: var(--bg-main);
   background-color: var(--green);
   font-size: var(--normal-text-size);
   font-family: Roboto;
   padding: 5px 6px;
   border-radius: 10px;
+}
+
+.introduction-left h1,
+.introduction-left h2,
+.introduction-left button {
+  animation: fade-in-left 1s ease-in 2s forwards;
 }
 
 .introduction-left button:hover,
@@ -173,7 +176,6 @@ Introduction
   position: relative;
   z-index: 2;
   opacity: 0;
-  animation: fade-in-right 1s ease-in 2s forwards;
 }
 
 .introduction-image-decorator {
@@ -185,6 +187,10 @@ Introduction
   top: 55%;
   left: -15%;
   opacity: 0;
+}
+
+.introduction-image,
+.introduction-image-decorator {
   animation: fade-in-right 1s ease-in 2s forwards;
 }
 
