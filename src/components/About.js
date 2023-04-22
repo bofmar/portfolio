@@ -13,7 +13,7 @@ export default function About() {
           <p>I am a person who firmly believes in <span>continuous growth</span>, and I constantly challenge my self with new technologies and ideas. I see myself as someone who is well organised, a problem solver who thrives under pressure, and with a good eye for detail. On my time off, I can be found gaming, listening to music or watching movies.</p>
         </div>
         <div className='about-right'>
-          {TechnologyData.map(tech => <SkillIcon path={tech.url} desc={tech.name} />)}
+          {TechnologyData.map(tech => <SkillIcon key={tech.name} path={tech.url} desc={tech.name} />)}
         </div>
       </div>
     </section>

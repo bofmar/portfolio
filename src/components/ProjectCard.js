@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
     <div className='project-card-wrapper'>
       <h4 className='project-name'>{project.name}</h4>
       <section className='stack-section'>
-        {project.stack.map(tech => <StackBadge tech={tech} />)}
+        {project.stack.map(tech => <StackBadge tech={tech} key={tech} />)}
       </section>
       <p className='project-description'>{project.desc}</p>
       <img src={project.imgPath} alt='' className='project-image' />
