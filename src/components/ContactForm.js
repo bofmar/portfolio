@@ -23,11 +23,11 @@ export default function ContactForm() {
           <label htmlFor='last-name'>Last Name</label>
           <input type="text" placeholder="Last name" id='last-name' name="last-name" value={data.lastName} required onChange={e => setData({ ...data, lastName: e.target.value })} />
         </div>
-        <div>
+        <div className='span'>
           <label htmlFor='email'>Email</label>
           <input type="email" placeholder="Email" id='email' name="email" value={data.email} required onChange={e => setData({ ...data, email: e.target.value })} />
         </div>
-        <div>
+        <div className='span'>
           <label htmlFor='message'>Message</label>
           <textarea placeholder="Your message" id='message' name="message" value={data.message} required onChange={e => setData({ ...data, message: e.target.value })} />
         </div>
