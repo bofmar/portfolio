@@ -527,3 +527,28 @@ form label {
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 650px) {
+  .introduction-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20%;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .socials-area {
+    align-self: center;
+  }
+}
