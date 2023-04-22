@@ -446,6 +446,10 @@ form textarea {
   color: var(--white-text);
 }
 
+form textarea {
+  resize: none;
+}
+
 form input:focus,
 form textarea:focus {
   outline: none;

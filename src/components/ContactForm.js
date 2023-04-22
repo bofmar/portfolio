@@ -29,7 +29,7 @@ export default function ContactForm() {
         </div>
         <div className='span'>
           <label htmlFor='message'>Message</label>
-          <textarea placeholder="Your message" id='message' name="message" value={data.message} required onChange={e => setData({ ...data, message: e.target.value })} />
+          <textarea placeholder="Your message" rows={10} id='message' name="message" value={data.message} required onChange={e => setData({ ...data, message: e.target.value })} />
         </div>
         <div>
           <button type="submit" className='submit-button'>Submit</button>
