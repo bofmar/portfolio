@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --bg-main: #121212;
+  --bg-secondary: #28231d;
   --white-text: #eee;
   --green: rgba(63, 195, 128, 1);
   --off-green: rgba(60, 185, 118, 1);
@@ -424,7 +425,8 @@ form{
 }
 
 form > * ,
-form input{
+form input,
+form textarea {
   width: 100%;
 }
 
@@ -434,7 +436,28 @@ form input{
   flex-direction: column;
 }
 
+form input,
+form textarea {
+  background-color: var(--bg-main);
+  border: 1px solid var(--bg-secondary);
+  border-bottom: 1px solid var(--green);
+  border-radius: 5px;
+  text-indent: 0.5rem;
+  color: var(--white-text);
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid var(--green);
+}
+
+form label {
+  color: var(--green);
+}
+
 .submit-button {
+  margin-top: 10px;
   color: var(--bg-main);
   background-color: var(--green);
   font-family: Roboto;
