@@ -61,7 +61,7 @@ header > ul {
 
 header a {
   font-size: var(--normal-text-size);
-  color: var(--white-text);
+  color: var(--bg-secondary);
   font-family: Roboto;
   position: relative;
 }
@@ -80,7 +80,7 @@ header a::after {
 
 header a:hover:after,
 header a:focus:after {
-  background-color: var(--white-text);
+  background-color: var(--bg-secondary);
   transform: scaleX(1);
 }
 
