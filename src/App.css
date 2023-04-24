@@ -594,10 +594,6 @@ form label {
 }
 
 @media (max-width: 450px) {
-  header a{
-    font-size: 12px;
-  }
-  
   .stack-badge {
     font-size: 12px;
   }
