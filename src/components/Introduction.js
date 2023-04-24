@@ -16,7 +16,7 @@ export default function Introduction() {
         </div>
       </div>
       <div className='introduction-right'>
-        <img className='introduction-image' src={profile} />
+        <img className='introduction-image' src={profile} alt='' />
         <div className='introduction-image-decorator'></div>
       </div>
     </section>
