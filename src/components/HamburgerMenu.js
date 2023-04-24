@@ -5,7 +5,7 @@ import { CgMenu } from 'react-icons/cg';
 export default function HamburgerMenu() {
   return (
     <nav className='ham-nav'>
-      <CgMenu />
+      <CgMenu className='hamburger-icon' />
       <NavigationLinks />
     </nav>
   );
