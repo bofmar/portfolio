@@ -1,14 +1,12 @@
 import React from "react";
+import NavMenu from './NavMenu';
+import HamburgerMenu from './HamburgerMenu';
 
 export default function HeaderNav() {
   return (
     <header>
-      <ul>
-        <li><a href='#home'>HOME</a></li>
-        <li><a href='#about'>ABOUT</a></li>
-        <li><a href='#projects'>PROJECTS</a></li>
-        <li><a href='#contact'>CONTACT</a></li>
-      </ul>
+      <NavMenu />
+      <HamburgerMenu />
     </header>
   );
 }
