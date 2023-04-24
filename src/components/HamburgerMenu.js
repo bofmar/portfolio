@@ -3,7 +3,7 @@ import NavigationLinks from './NavigationLinks';
 
 export default function HamburgerMenu() {
   return (
-    <nav>
+    <nav className='ham-nav'>
       <NavigationLinks />
     </nav>
   );

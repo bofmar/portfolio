@@ -3,7 +3,7 @@ import NavigationLinks from './NavigationLinks';
 
 export default function NavMenu() {
   return (
-    <nav>
+    <nav class='default-nav'>
       <NavigationLinks />
     </nav>
   );
