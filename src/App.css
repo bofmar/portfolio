@@ -347,7 +347,7 @@ footer{
   color: var(--bg-main);
   font-family: Roboto;
   padding: 5px 12px;
-  border-radius: 20%/50%;
+  border-radius: 15px;
 }
 
 .project-image {
