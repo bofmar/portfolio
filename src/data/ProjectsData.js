@@ -1,8 +1,8 @@
 import Project from './Project';
-import shoping from '../assets/shoping.gif';
-import todoit from '../assets/todoit.gif';
-import weather from '../assets/weather.gif';
-import gol from '../assets/gol.gif';
+import shoping from '../assets/shoping.png';
+import todoit from '../assets/todoit.png';
+import weather from '../assets/weather.png';
+import gol from '../assets/gol.png';
 
 export const ProjectsData = [
   new Project(0, 'Shoping Cart', "Simulation of a comercial website. The user can browse the products, short them by category and add them to their shoping cart. Uses React and React Router.", shoping, 'https://bofmar.github.io/shoping-cart/', 'https://github.com/bofmar/shoping-cart', ['HTML5', 'CSS3', 'React', 'React Router']),
