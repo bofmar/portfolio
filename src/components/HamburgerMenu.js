@@ -8,8 +8,6 @@ export default function HamburgerMenu() {
   const openButton = <CgMenu className='hamburger-icon' onClick={() => setOpen(!open)} />
   const closeButton = <CgClose className='hamburger-icon' onClick={() => setOpen(!open)} />
 
-
-
   return (
     <nav className='ham-nav'>
       {open ? closeButton : openButton}

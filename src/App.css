@@ -88,6 +88,18 @@ header a:focus:after {
   display: none;
 }
 
+.ham-nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  top: 5vh;
+  right: 0;
+  background-color: var(--green);
+  border-top: 2px solid var(--bg-secondary);
+}
+
 .hamburger-icon {
   width: 40px;
   height: 40px;
