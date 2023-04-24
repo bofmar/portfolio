@@ -368,12 +368,12 @@ footer{
 
 .project-card-wrapper:nth-child(2n):hover .project-image,
 .project-card-wrapper:nth-child(2n):focus-within .project-image{
-  transform: scale(1.1) rotateY(10deg) translateX(-20px);
+  transform: scale(1.1) rotateY(0) translateX(-20px);
 }
 
 .project-card-wrapper:nth-child(2n + 1):hover .project-image,
 .project-card-wrapper:nth-child(2n + 1):focus-within .project-image{
-  transform: scale(1.1) rotateY(-10deg) translateX(20px);
+  transform: scale(1.1) rotateY(0) translateX(20px);
 }
 
 .project-links {
