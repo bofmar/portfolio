@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import NavigationLinks from './NavigationLinks';
-import { CgMenu } from 'react-icons/cg';
+import { CgMenu, CgClose } from 'react-icons/cg';
 
 export default function HamburgerMenu() {
+  const [open, setOpen] = useState(false);
+
+  const openButton = <CgMenu className='hamburger-icon' onClick={() => setOpen(!open)} />
+  const closeButton = <CgClose className='hamburger-icon' onClick={() => setOpen(!open)} />
+
+
+
   return (
     <nav className='ham-nav'>
-      <CgMenu className='hamburger-icon' />
-      <NavigationLinks />
+      {open ? closeButton : openButton}
+      {open && <NavigationLinks />}
     </nav>
   );
 }
