@@ -554,7 +554,7 @@ form label {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   header a{
     font-size: 12px;
   }
