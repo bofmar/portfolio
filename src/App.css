@@ -533,6 +533,16 @@ form label {
   }
 }
 
+@media (max-width: 900px) {
+  .ham-nav {
+    display: flex;
+  }
+
+  .default-nav {
+    display: none;
+  }
+}
+
 @media (max-width: 650px) {
   .introduction-section {
     display: flex;
