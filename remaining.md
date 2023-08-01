@@ -1,14 +1,6 @@
 App
-ContactsForm
-Footer
-HamburgerMenu
-HeaderNav
 Introduction
 Main
-NavMenu
-NavigationLinks
 ProjectCard
 Projects
-SocialMedia
 StackBadge
-SuccessMessage
